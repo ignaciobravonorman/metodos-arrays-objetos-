@@ -61,6 +61,7 @@
 
     //--Requerimiento 4--//
     document.write('<ul>')
+        < h3 > pacientes radiologia </h3 > 
     for (let consulta of radiologia) {
         document.write(`<li>${consulta.paciente}</li>`);
     }
@@ -73,6 +74,14 @@
         document.write(`<li>${consulta.paciente}</li>`);
     }
     document.write('</ul>')
+
+    //--Requerimiento 5--//
+    for (let consulta of dental) {
+        if (consulta.prevision === 'ISAPRE') {
+            document.write(`<p> ${consulta.paciente} - ${consulta.prevision}</p>`);
+        }
+    }
+
     //Agregar código para el desafio 2 aquí
 
 
