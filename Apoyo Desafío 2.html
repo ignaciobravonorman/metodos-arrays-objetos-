@@ -47,8 +47,16 @@
     traumatologia.push({ hora: '12:00', especialista: 'MATIAS ARAVENA', paciente: ' SUSANA POBLETE', rut: ' 14345656-6', prevision: 'FONASA' },)
 
     //-- Requerimiento 2--//
+
     radiologia.pop();
     radiologia.shift();
+
+
+    //--Requerimiento 3 --//
+
+    for (let consulta of dental) {
+        document.write(`<p>${consulta.hora} -${consulta.especialista} -${consulta.paciente}  -${consulta.rut} -${consulta.prevision}</p>`);
+    }
 
 
 
