@@ -59,7 +59,20 @@
     }
 
 
+    //--Requerimiento 4--//
+    document.write('<ul>')
+    for (let consulta of radiologia) {
+        document.write(`<li>${consulta.paciente}</li>`);
+    }
 
+    for (let consulta of traumatologia) {
+        document.write(`<li>${consulta.paciente}</li>`);
+    }
+
+    for (let consulta of dental) {
+        document.write(`<li>${consulta.paciente}</li>`);
+    }
+    document.write('</ul>')
     //Agregar código para el desafio 2 aquí
 
 
