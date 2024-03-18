@@ -46,22 +46,26 @@
     traumatologia.push({ hora: '10:30', especialista: 'ANTONIO LARENAS', paciente: 'PABLO LOAYZA', rut: ' 13453234-1 ', prevision: ' ISAPRE' },)
     traumatologia.push({ hora: '12:00', especialista: 'MATIAS ARAVENA', paciente: ' SUSANA POBLETE', rut: ' 14345656-6', prevision: 'FONASA' },)
 
+    //-FIN-//
+
+
     //-- Requerimiento 2--//
 
     radiologia.pop();
     radiologia.shift();
 
+    //-FIN-//
 
     //--Requerimiento 3 --//
 
     for (let consulta of dental) {
         document.write(`<p>${consulta.hora} -${consulta.especialista} -${consulta.paciente}  -${consulta.rut} -${consulta.prevision}</p>`);
     }
+    //-FIN-//
 
 
     //--Requerimiento 4--//
     document.write('<ul>')
-        < h3 > pacientes radiologia </h3 > 
     for (let consulta of radiologia) {
         document.write(`<li>${consulta.paciente}</li>`);
     }
@@ -75,12 +79,25 @@
     }
     document.write('</ul>')
 
+    //-FIN-//
+
     //--Requerimiento 5--//
     for (let consulta of dental) {
         if (consulta.prevision === 'ISAPRE') {
             document.write(`<p> ${consulta.paciente} - ${consulta.prevision}</p>`);
         }
     }
+
+    //-FIN-//
+
+    //--Requerimiento 6--//
+    for (let consulta of dental) {
+        if (consulta.prevision === 'FONASA') {
+            document.write(`<p> ${consulta.paciente} - ${consulta.prevision}</p>`);
+        }
+    }
+
+    //-FIN-//
 
     //Agregar código para el desafio 2 aquí
 
